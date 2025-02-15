@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Event Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Three elements with the same class -->
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+
+  <script>
+    // Select all elements with the class 'box'
+    const boxes = document.querySelectorAll('.box');
+
+    // Attach a click event listener to each box
+    boxes.forEach(box => {
+      box.addEventListener('click', function(event) {
+        // event.target is the element that was clicked.
+        console.log('Clicked element:', event.target.id);
+
+        // Change the CSS property of the clicked element
+        event.target.style.backgroundColor = 'green';
+
+        // Loop over all boxes and change the CSS for those not clicked
+        boxes.forEach(otherBox => {
+          if (otherBox !== event.target) {
+            otherBox.style.backgroundColor = 'blue';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
