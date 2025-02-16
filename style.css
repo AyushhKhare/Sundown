@@ -517,9 +517,7 @@ nav .links a:hover::after {
 }
 
 @media (max-width: 600px) {
-	:root{
-		--padding: 5vw 4vw;
-	}
+	
 
 
 	#page1 nav img{
@@ -623,7 +621,7 @@ nav .links a:hover::after {
 	#page3 .project img{
 		display: block;
 		object-fit: cover;
-		border-radius: 50px;
+		border-radius: 20px;
 
 	}
 	#page3 .project .row::after {
@@ -646,8 +644,11 @@ nav .links a:hover::after {
 
 	#page4 .left{
 		width: 100%;
-		padding: 0;
+		/* padding: var(--padding); */
 		gap: 0;
+
+		/* align-items: center; */
+		/* justify-content: center; */
 	}
 	#page4 .right{
 		width: 100%;
@@ -659,6 +660,10 @@ nav .links a:hover::after {
 		width: 100%;
 	}
 
+	#page4 .left .box .top h1{
+		font-size: 40px;
+		padding-left: none;
+	}
 	.swiper{
 		height: 50vh;
 		padding: 5vw 2vw;
@@ -726,4 +731,12 @@ nav .links a:hover::after {
         font-size: 9vw;
       
     }
+}
+
+@media (max-width: 400px) {
+	#page1 nav .links a {
+		font-size: 12px;
+		padding: 5px 10px;
+	}
+	
 }
