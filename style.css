@@ -462,6 +462,8 @@ nav .links a:hover::after {
 
 #footer .btm {
 	position: relative;
+	height: 25vh;
+	/* background-color: wheat; */
 	z-index: 10;
 }
 
@@ -673,7 +675,7 @@ nav .links a:hover::after {
 	}
 	#footer{
 		height: 100vh;
-		align-items: safe center;
+		align-items: ;
 	}
 
 	#footer .btm h1{
