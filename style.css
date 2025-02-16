@@ -675,6 +675,7 @@ nav .links a:hover::after {
 		height: 100vh;
 		align-items: safe flex-end;
 	}
+
 	#footer .btm h1{
 		font-size: 20vw;
 	}
