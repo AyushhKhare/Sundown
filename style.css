@@ -522,7 +522,9 @@ nav .links a:hover::after {
 	}
 
 
-
+	nav img{
+		height: 40px;
+	}
 	nav .links a {
 		font-size: 14px;
 		padding: 8px 15px;
@@ -667,8 +669,8 @@ nav .links a:hover::after {
 		height: 30vh;
 	}
 	#footer{
-		height: 30vh;
-		align-items: safe center;
+		height: 100vh;
+		align-items: safe flex-end;
 	}
 }
 
