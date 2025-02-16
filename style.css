@@ -675,6 +675,10 @@ nav .links a:hover::after {
 		height: 100vh;
 		align-items: safe flex-end;
 	}
+	#footer .btm .links a,
+	#footer .btm .links h4 {
+		font-size: 12px;
+	}
 }
 
 #loader{
