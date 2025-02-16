@@ -6,15 +6,16 @@ const scroll = new LocomotiveScroll({
 var img = document.querySelector('.fixed-image')
 var project = document.querySelector(".project")
 
-// function coordinate(event) {
-//     let x = event.clientX;
-//     let y = event.clientY;
-//     var dot = document.querySelector(".mouse-follower") ;
-//     dot.style.left= x+'px';
-//     dot.style.top=y+'px';
 
-// }
 
+var loading = document.querySelector("#loader")
+var test = document.querySelector(".test")
+
+
+
+// setTimeout(() => {
+//     loading.style.top = "-100%" 
+// }, 3000);
 
 
 
@@ -36,17 +37,15 @@ project.addEventListener('mouseover', (e) => {
     else{
         img.style.backgroundImage = `url(${a})`
     }
-
+    if(window.innerWidth < 600){
+        img.style.display = 'none'
+    }
     img.addEventListener('mouseover',()=>{
         img.style.display = 'block'
     })
    }) 
 
 
-function move(event){
-    let x = event.clientX;
-    let y = event.clientY;
-}
 
 
 var shifter = document.querySelector("#page4 .left")
@@ -86,3 +85,15 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+
+
+
+  function loaderAnimation() {
+    var loader = document.querySelector("#loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 4200)
+}
+
+loaderAnimation();
