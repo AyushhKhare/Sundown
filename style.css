@@ -673,7 +673,7 @@ nav .links a:hover::after {
 	}
 	#footer{
 		height: 100vh;
-		align-items: safe flex-end;
+		align-items: safe center;
 	}
 
 	#footer .btm h1{
